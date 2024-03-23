@@ -42,6 +42,21 @@ public class BMICalculator extends JFrame {
         txtHeight.setFont(new Font("Tahoma", Font.PLAIN, 16));
         txtHeight.setBounds(150, 20, 200, 30);
         contentPane.add(txtHeight);
+        
+        cbHeightUnit = new JComboBox<>(new String[] {"cm", "m"});
+        cbHeightUnit.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        cbHeightUnit.setBounds(360, 20, 50, 30);
+        contentPane.add(cbHeightUnit);
+        
+        JLabel lblWeight = new JLabel("Cân nặng (kg):");
+        lblWeight.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        lblWeight.setBounds(20, 60, 120, 30);
+        contentPane.add(lblWeight);
+        
+        txtWeight = new JTextField();
+        txtWeight.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        txtWeight.setBounds(150, 60, 200, 30);
+        contentPane.add(txtWeight);
 	}
 
 }
