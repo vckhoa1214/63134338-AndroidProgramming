@@ -99,7 +99,28 @@ public class BMICalculator extends JFrame {
         txtStatus.setFont(new Font("Tahoma", Font.PLAIN, 16));
         txtStatus.setBounds(150, 220, 200, 30);
         contentPane.add(txtStatus);
-        
 	}
+        
+	private void calculateBMI() {
+        double height = Double.parseDouble(txtHeight.getText());
+        if (cbHeightUnit.getSelectedItem().equals("cm")) {
+            height /= 100; // convert cm to m
+        }
+        double weight = Double.parseDouble(txtWeight.getText());
+        double bmi = weight / (height * height);
+        txtBMI.setText(String.format("%.2f", bmi));
+
+        String status;
+        if (bmi < 18.5) {
+            status = "Quá gầy";
+        } else if (bmi < 24.9) {
+            status = "Bình thường";
+        } else if (bmi < 29.9) {
+            status = "Hơi béo";
+        } else {
+            status = "Béo phì";
+        }
+        txtStatus.setText(status);
+    }
 
 }
