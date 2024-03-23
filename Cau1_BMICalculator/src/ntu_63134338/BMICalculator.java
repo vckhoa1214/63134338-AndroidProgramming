@@ -32,6 +32,16 @@ public class BMICalculator extends JFrame {
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
+        
+        JLabel lblHeight = new JLabel("Chiều cao:");
+        lblHeight.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        lblHeight.setBounds(20, 20, 120, 30);
+        contentPane.add(lblHeight);
+        
+        txtHeight = new JTextField();
+        txtHeight.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        txtHeight.setBounds(150, 20, 200, 30);
+        contentPane.add(txtHeight);
 	}
 
 }
