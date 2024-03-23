@@ -89,6 +89,17 @@ public class BMICalculator extends JFrame {
         txtBMI.setBounds(150, 180, 200, 30);
         contentPane.add(txtBMI);
         
+        JLabel lblStatus = new JLabel("Trạng thái:");
+        lblStatus.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        lblStatus.setBounds(20, 220, 120, 30);
+        contentPane.add(lblStatus);
+        
+        txtStatus = new JTextField();
+        txtStatus.setEditable(false);
+        txtStatus.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        txtStatus.setBounds(150, 220, 200, 30);
+        contentPane.add(txtStatus);
+        
 	}
 
 }
