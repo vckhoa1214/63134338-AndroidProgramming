@@ -15,22 +15,15 @@ import java.awt.event.ActionListener;
 public class BMICalculator extends JFrame {
 
 	
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					BMICalculator frame = new BMICalculator();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+	private JPanel contentPane;
+    private JTextField txtHeight;
+    private JTextField txtWeight;
+    private JTextField txtBMI;
+    private JTextField txtStatus;
+    private JComboBox<String> cbGender;
+    private JComboBox<String> cbHeightUnit;
 
-	/**
-	 * Create the frame.
-	 */
+
 	public BMICalculator() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
