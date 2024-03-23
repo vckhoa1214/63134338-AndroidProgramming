@@ -67,6 +67,15 @@ public class BMICalculator extends JFrame {
         cbGender.setFont(new Font("Tahoma", Font.PLAIN, 16));
         cbGender.setBounds(150, 100, 200, 30);
         contentPane.add(cbGender);
+        
+        JButton btnCalculate = new JButton("Tính BMI");
+        btnCalculate.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        btnCalculate.setBounds(150, 140, 200, 30);
+        btnCalculate.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                calculateBMI();
+            }
+        });
 	}
 
 }
