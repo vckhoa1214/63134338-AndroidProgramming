@@ -76,6 +76,19 @@ public class BMICalculator extends JFrame {
                 calculateBMI();
             }
         });
+        contentPane.add(btnCalculate);
+        
+        JLabel lblBMI = new JLabel("Chỉ số BMI:");
+        lblBMI.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        lblBMI.setBounds(20, 180, 120, 30);
+        contentPane.add(lblBMI);
+        
+        txtBMI = new JTextField();
+        txtBMI.setEditable(false);
+        txtBMI.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        txtBMI.setBounds(150, 180, 200, 30);
+        contentPane.add(txtBMI);
+        
 	}
 
 }
