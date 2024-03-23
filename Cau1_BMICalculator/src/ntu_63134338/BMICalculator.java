@@ -57,6 +57,16 @@ public class BMICalculator extends JFrame {
         txtWeight.setFont(new Font("Tahoma", Font.PLAIN, 16));
         txtWeight.setBounds(150, 60, 200, 30);
         contentPane.add(txtWeight);
+        
+        JLabel lblGender = new JLabel("Giới tính:");
+        lblGender.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        lblGender.setBounds(20, 100, 120, 30);
+        contentPane.add(lblGender);
+        
+        cbGender = new JComboBox<>(new String[] {"Nam", "Nữ"});
+        cbGender.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        cbGender.setBounds(150, 100, 200, 30);
+        contentPane.add(cbGender);
 	}
 
 }
