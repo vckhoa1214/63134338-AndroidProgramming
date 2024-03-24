@@ -251,7 +251,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/background_btn4"
-            android:onClick="btn_delete" />
+            android:onClick="btn_delete"/>
 
         <Button
             style="@style/Widget.AppCompat.Button.Borderless"
